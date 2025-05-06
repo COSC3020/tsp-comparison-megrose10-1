@@ -22,3 +22,9 @@ Local Search found. Why is this?
 
 Add the code to run your experiments, graphs, and an explanation of what you did
 to this markdown file.
+
+I used my TSP Held Karp and Local Search algorithms for comparison. I also asked questions in class. I used https://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-function-to-execute-using-javascript/ to find how to time each implementation, and also when it was harder to write out the distance matrix to test, I asked ChatGPT on how to generate a distance matrix to test since for local search, the distance matrix was large.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+In the Held-Karp implementation, it always tries to find the best/shortest tour, while Local Search looks for a good tour using randomness and stops after reaching a certain point, not always finding the best/shortest tour. Looking at my graphs, we see no matter what input size is given to Local Search or Held-Karp, Held-Karp always finds the best tour, so local search can never return a better result, and will always either be equal or more than Held-Karp's best tour. While this may seem like a downside, if your goal is to be faster and you're not too worried with always getting the absolute best tour, Local Search is the way to go. You may be giving up the shortest tour overall, but you're saving time. Both implementations have their benefits, however, in the grand scheme of things, while you may get lucky with your randomization with local search, each implementation have their tradeoffs with either time or finding the best solution.
