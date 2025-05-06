@@ -24,3 +24,5 @@ Add the code to run your experiments, graphs, and an explanation of what you did
 to this markdown file.
 
 I used my TSP Held Karp and Local Search algorithms for comparison. I also asked questions in class. 
+
+In the Held-Karp implementation, it always tries to find the best/shortest tour, while Local Search looks for a good tour using randomness and stops after reaching a certain point, not always finding the best/shortest tour. Looking at my graphs, we see no matter what input size is given to Local Search or Held-Karp, Held-Karp always finds the best tour, so local search can never return a better result, and will always either be equal or more than Held-Karp's best tour. While this may seem like a downside, if your goal is to be faster and you're not too worried with always getting the absolute best tour, Local Search is the way to go. You may be giving up the shortest tour overall, but you're saving time. Both implementations have their benefits, however, in the grand scheme of things, while you may get lucky with your randomization with local search, each implementation have their tradeoffs with either time or finding the best solution.
