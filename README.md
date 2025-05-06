@@ -22,3 +22,5 @@ Local Search found. Why is this?
 
 Add the code to run your experiments, graphs, and an explanation of what you did
 to this markdown file.
+
+I used my TSP Held Karp and Local Search algorithms for comparison. I also asked questions in class. 
